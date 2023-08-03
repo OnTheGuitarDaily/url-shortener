@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "URL Shortener",
+  "version": "1.0",
+  "description": "Create a short URL",
+  "icons": {
+    "16": "./src/img/icon.png",
+    "48": "./src/img/icon.png",
+    "128": "./src/img/icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
