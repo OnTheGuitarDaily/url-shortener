@@ -9,14 +9,24 @@
     <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
-    <div class="container p-3">
+    <div class="container py-3 d-flex flex-column align-items-center justify-content-center">
       <h1>URL Shortener</h1>
-      <form class="d-flex flex-column gap-1 my-3">
+      <form class="d-flex flex-column gap-1 my-3" id="shortenForm">
         <label for="urlInput">Enter URL:</label>
-        <input type="text" placeholder="Please enter your link here"/>
-        <small>Please enter valid URL</small>
+        <div>
+          <input type="text" id="link" placeholder="Enter your link here"/>
+          <button type="submit" id="shortenBTN">Shorten</button>
+        </div>
+        <small class="validation display">Please enter valid URL</small>
       </form>
-      <button type="submit">Generate short URL</button>
+      <div>
+        <label for="urlInput">Shorter URL:</label>
+        <div class="d-flex gap-1">
+          <div class="ShorterURL" id="smallLink"></div>
+          <button id="copy">copy</button>
+        </div>
+      </div>
+      
     </div>
     <script src="./src/script/popup.js"></script>
   </body>
